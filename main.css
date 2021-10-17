@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(-35turn, #52bd72,rgba(255, 255, 255, 0.486),#0faed6);
+}
+
+.nav {
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .navbutton {
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    height: 35px;
+}
+
+.nav .navbutton a {
+    display: inline-block;
+    color: #fff;
+    width: 115px;
+    padding: 12px 0;
+    text-align: center;
+    transition: .88s;
+    border: 2px groove white;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+.nav .navbutton a:hover {
+    color: #000;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.nav .navbutton a:focus {   
+    color: #000;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.navbutton a::after {
+    content: "";
+    position: absolute;
+    height: 150%;
+    width: 0;
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+} 
+
+.navbutton a:hover::after {
+    width: 100%;
+}
+.navbutton a:focus::after {
+    width: 100%;
+}
