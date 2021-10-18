@@ -79,3 +79,17 @@
 .navbutton a:focus::after {
     width: 100%;
 }
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,190px);
+    grid-template-rows: repeat(5,190px);
+    justify-content: center;
+    gap :15px;
+    margin-top: 50px;
+}
+
+.item-1,.item-2,.item-3,.item-4,.item-5,.item-6{
+background-color: gray;
+box-shadow: -10px 0px 3px 0px rgba(12, 1, 1, 0.746)
+}
